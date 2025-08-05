@@ -11,7 +11,6 @@ This is my simple company profile website for QTravel, showcasing travel service
 - `font/`: Font files used in the project.
 - `img/`: Image assets, including the background image of Indonesian islands.
 - `js/`: JavaScript files for interactivity.
-- `node_modules/`: Node.js modules installed via npm.
 - `src/`: Source files for development.
 - `about.html`: Page detailing the company information.
 - `culture.html`: Page highlighting Indonesian culture.
