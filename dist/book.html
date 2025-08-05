@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a trip</title>
+
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="book.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- boxicons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- header design -->
+   
+    <section class="bg-gray-50 py-8 antialiased dark:bg-gray-900 md:py-16">
+        <form action="#" id="bookatripForm" class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+
+
+            <div class="mt-6 sm:mt-8 lg:flex lg:items-start lg:gap-12 xl:gap-16">
+                <div class="min-w-0 flex-1 space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="text-xl font-semibold text-gray-900 dark:text-white">Book a Trip</h2>
+
+                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                            <div>
+                                <label for="your_name"
+                                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> First name
+                                </label>
+                                <input type="text" id="your_name"
+                                    class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
+                                    placeholder="John" required />
+                            </div>
+
+                            <div>
+                                <label for="your_last_name"
+                                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Last name
+                                </label>
+                                <input type="text" id="last_name"
+                                    class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
+                                    placeholder="Doe" required />
+                            </div>
+
+                            <div>
+                                <div class="mb-2 flex items-center gap-2">
+                                    <label for="select-country-input-3"
+                                        class="block text-sm font-medium text-gray-900 dark:text-white"> From
+                                    </label>
+                                </div>
+                                <select id="select-country-input-3" required
+                                    class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+                                    <option selected>Bali</option>
+                                    <option value="Jawa">Jawa</option>
+                                    <option value="Kapal Laut">Kapal Laut</option>
+                                    <option value="Kalimantan">Kaliamantan</option>
+                                    <option value="Sumatra">Sumatra</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <div class="mb-2 flex items-center gap-2">
+                                    <label for="select-city-input-3"
+                                        class="block text-sm font-medium text-gray-900 dark:text-white"> To </label>
+                                </div>
+                                <select id="select-city-input-3" required
+                                    class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500">
+                                    <option selected>Lombok</option>
+                                    <option value="Mount Bromo">Mount Bromo</option>
+                                    <option value="Padang Mahsyar">Padang Mahsyar</option>
+                                    <option value="Kukusan">Kukusan</option>
+                                    ]
+                                </select>
+                            </div>
+
+                            <!-- <div>
+                                <label for="phone-input-3"
+                                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Phone Number*
+                                </label>
+                                <div class="flex items-center">
+                                    
+                                    <div class="relative w-full">
+                                        <input type="text" id="phone-input"
+                                            class="z-20 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:border-s-gray-700  dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500"
+                                            pattern="" placeholder="+62" required />
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div>
+                                <label for="floating_email"
+                                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white">
+                                    Email </label>
+                                <input type="email" name="floating_email" id="floating_email"
+                                    title="Must be a valid email address"
+                                    class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
+                                    placeholder="name@mail.com" required
+                                    pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[a-z]{2,}" />
+                            </div>
+
+                            <!-- <div>
+                                <label for="company_name"
+                                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Company name
+                                </label>
+                                <input type="text" id="company_name"
+                                    class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
+                                    placeholder="Flowbite LLC" required />
+                            </div> -->
+
+                            <div>
+                                <label for="vat_number"
+                                    class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> ID number
+                                </label>
+                                <input type="text" id="vat_number" name="vat_number"
+                                    class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
+                                    placeholder="DE42313253" required min="300" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Payment</h3>
+
+                        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                            <div
+                                class="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4 dark:border-gray-700 dark:bg-gray-800">
+                                <div class="flex items-start">
+                                    <div class="flex h-5 items-center">
+                                        <input id="credit-card" aria-describedby="credit-card-text" type="radio"
+                                            name="payment-method" value=""
+                                            class="h-4 w-4 border-gray-300 bg-white text-primary-600 focus:ring-2 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
+                                            checked />
+                                    </div>
+
+                                    <div class="ms-4 text-sm">
+                                        <label for="credit-card"
+                                            class="font-medium leading-none text-gray-900 dark:text-white"> Credit Card
+                                        </label>
+                                        <p id="credit-card-text"
+                                            class="mt-1 text-xs font-normal text-gray-500 dark:text-gray-400">Pay with
+                                            your credit card</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 flex items-center gap-2">
+                                    <button type="button"
+                                        class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Delete</button>
+
+                                    <div class="h-3 w-px shrink-0 bg-gray-200 dark:bg-gray-700"></div>
+
+                                    <button type="button"
+                                        class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Edit</button>
+                                </div>
+                            </div>
+
+                            <div
+                                class="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4 dark:border-gray-700 dark:bg-gray-800">
+                                <div class="flex items-start">
+                                    <div class="flex h-5 items-center">
+                                        <input id="pay-on-delivery" aria-describedby="pay-on-delivery-text" type="radio"
+                                            name="payment-method" value=""
+                                            class="h-4 w-4 border-gray-300 bg-white text-primary-600 focus:ring-2 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600" />
+                                    </div>
+
+                                    <div class="ms-4 text-sm">
+                                        <label for="pay-on-delivery"
+                                            class="font-medium leading-none text-gray-900 dark:text-white"> Payment on
+                                            delivery </label>
+                                        <p id="pay-on-delivery-text"
+                                            class="mt-1 text-xs font-normal text-gray-500 dark:text-gray-400">+$15
+                                            payment processing fee</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 flex items-center gap-2">
+                                    <button type="button"
+                                        class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Delete</button>
+
+                                    <div class="h-3 w-px shrink-0 bg-gray-200 dark:bg-gray-700"></div>
+
+                                    <button type="button"
+                                        class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Edit</button>
+                                </div>
+                            </div>
+
+                            <div
+                                class="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4 dark:border-gray-700 dark:bg-gray-800">
+                                <div class="flex items-start">
+                                    <div class="flex h-5 items-center">
+                                        <input id="paypal-2" aria-describedby="paypal-text" type="radio"
+                                            name="payment-method" value=""
+                                            class="h-4 w-4 border-gray-300 bg-white text-primary-600 focus:ring-2 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600" />
+                                    </div>
+
+                                    <div class="ms-4 text-sm">
+                                        <label for="paypal-2"
+                                            class="font-medium leading-none text-gray-900 dark:text-white"> Paypal
+                                            account </label>
+                                        <p id="paypal-text"
+                                            class="mt-1 text-xs font-normal text-gray-500 dark:text-gray-400">Connect to
+                                            your account</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 flex items-center gap-2">
+                                    <button type="button"
+                                        class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Delete</button>
+
+                                    <div class="h-3 w-px shrink-0 bg-gray-200 dark:bg-gray-700"></div>
+
+                                    <button type="button"
+                                        class="text-sm font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                    <div>
+                        <label for="voucher" class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Enter
+                            a gift card, voucher or promotional code </label>
+                        <div class="flex max-w-md items-center gap-4">
+                            <input type="text" id="voucher"
+                                class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500"
+                                placeholder="" />
+                            <button type="button"
+                                class="flex items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-primary-800 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 w-full space-y-6 sm:mt-8 lg:mt-0 lg:max-w-xs xl:max-w-md">
+                    <div class="flow-root">
+                        <div class="-my-3 divide-y divide-gray-200 dark:divide-gray-800">
+                            <dl class="flex items-center justify-between gap-4 py-3">
+                                <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Subtotal</dt>
+                                <dd class="text-base font-medium text-gray-900 dark:text-white">$8,094.00</dd>
+                            </dl>
+
+                            <dl class="flex items-center justify-between gap-4 py-3">
+                                <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Savings</dt>
+                                <dd class="text-base font-medium text-green-500">0</dd>
+                            </dl>
+
+                            <dl class="flex items-center justify-between gap-4 py-3">
+                                <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Store Pickup</dt>
+                                <dd class="text-base font-medium text-gray-900 dark:text-white">$99</dd>
+                            </dl>
+
+                            <dl class="flex items-center justify-between gap-4 py-3">
+                                <dt class="text-base font-normal text-gray-500 dark:text-gray-400">Tax</dt>
+                                <dd class="text-base font-medium text-gray-900 dark:text-white">$199</dd>
+                            </dl>
+
+                            <dl class="flex items-center justify-between gap-4 py-3">
+                                <dt class="text-base font-bold text-gray-900 dark:text-white">Total</dt>
+                                <dd class="text-base font-bold text-gray-900 dark:text-white">$8,392.00</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <button type="submit" class="btn-proceed !bg-[#ffa343] flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-white !hover:bg-black focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                            Proceed to Payment
+                        </button>
+                    </div>
+                    <div class="space-y-3">
+                        <button type="button" onclick="window.location.href='/index.html'" class="btn-proceed !bg-gray-300 flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-black hover:bg-black focus:outline-none focus:ring-4  focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                            Cancel
+                        </button>
+                        <p class="text-sm font-normal text-gray-500 dark:text-gray-400">One or more items in your cart require an account.
+                            <a href="/index.html" title="" class="font-medium text-primary-700 underline hover:no-underline dark:text-primary-500">Sign in or create an account now.</a>.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+        <!-- Modal -->
+        <div id="confirmModal" class="hidden fixed z-10 inset-0 overflow-y-auto">
+            <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                <!-- Background overlay -->
+                <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                    <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+                </div>
+
+                <!-- Modal content -->
+                <div
+                    class="inline-block align-bottom bg-gray-50 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                    <!-- Modal header -->
+                    <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row sm:justify-between">
+                        <h3 class="text-lg font-medium text-gray-900">Confirm Submission</h3>
+                        <button id="closeModal"
+                            class="text-gray-400 bg-gray-50 hover:text-gray-500 focus:outline-none focus:text-gray-500 sm:mt-0">
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="px-4 py-6 sm:px-6">
+                        <p class="text-sm bg-gray-50 text-gray-700">Are you sure you want to proceed the payment?
+                            ?</p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse gap-3">
+                        <button id="confirmSubmit" type="button"
+                            class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 !bg-[#ffa343] text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm">
+                            Submit
+                        </button>
+                        <button id="cancelSubmit" type="button"
+                            class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 sm:mt-0 sm:w-auto sm:text-sm">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section design -->
+    <section class="footer">
+        <div class="footer-box">
+            <h3>Services</h3>
+            <a href="#">Email Marketing</a>
+            <a href="#">Campaigns</a>
+            <a href="#">Brandings</a>
+            <a href="#">Offline</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>About</h3>
+            <a href="#">Our story</a>
+            <a href="#">Benefits</a>
+            <a href="#">Team</a>
+            <a href="#">Careers</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Help</h3>
+            <a href="#">FAQs</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Social</h3>
+            <div class="social">
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        //     // Ambil elemen input
+        // var inputQuantity = document.getElementById('vat_number');
+
+        // // Tambahkan event listener untuk 'change' event
+        // inputQuantity.addEventListener('change', function () {
+        //     // Ambil nilai dari input
+        //     var quantity = parseInt(inputQuantity.value);
+
+        //     // Validasi jika nilai adalah 0, atur nilainya ke 1
+        //     if (quantity < 300) {
+        //         inputQuantity.value = 300;
+        //     }
+        // });
+
+        // Fungsi ini mengambil elemen dengan ID 'floating_email' dan menambahkan event listener untuk input
+        document.getElementById('floating_email').addEventListener('input', function () {
+            // Mengambil nilai email dari input
+            var email = this.value;
+            // Pola regular expression untuk memeriksa validitas email
+            var pattern = /^[a-zA-Z0-9._+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,}$/;
+            // Memeriksa apakah nilai email sesuai dengan pola regular expression
+            var isValid = pattern.test(email);
+
+            // Jika email tidak valid
+            if (!isValid) {
+                // Menetapkan pesan kesalahan kustom
+                this.setCustomValidity("Please enter a valid email address");
+            } else {
+                // Jika email valid, menghapus pesan kesalahan kustom
+                this.setCustomValidity("");
+            }
+        });
+
+
+        // Ambil elemen formulir
+        const form = document.getElementById('bookatripForm');
+
+        // Ketika formulir disubmit
+        form.addEventListener('submit', function (event) {
+            // Mencegah pengiriman formulir default
+            event.preventDefault();
+
+            // Tampilkan modal konfirmasi
+            const modal = document.getElementById('confirmModal');
+            modal.classList.remove('hidden');
+        });
+
+        // Ambil tombol untuk menutup modal
+        const closeModalButton = document.getElementById('closeModal');
+
+        // Ketika tombol untuk menutup modal ditekan
+        closeModalButton.addEventListener('click', function () {
+            // Sembunyikan modal
+            const modal = document.getElementById('confirmModal');
+            modal.classList.add('hidden');
+        });
+
+        // Ambil tombol untuk mengonfirmasi pengiriman formulir
+        const confirmSubmitButton = document.getElementById('confirmSubmit');
+
+        // Ketika tombol untuk mengonfirmasi pengiriman formulir ditekan
+        confirmSubmitButton.addEventListener('click', function () {
+            // Submit formulir
+            form.submit();
+        });
+
+        // Ambil tombol untuk membatalkan pengiriman formulir
+        const cancelSubmitButton = document.getElementById('cancelSubmit');
+
+        // Ketika tombol untuk membatalkan pengiriman formulir ditekan
+        cancelSubmitButton.addEventListener('click', function () {
+            // Sembunyikan modal
+            const modal = document.getElementById('confirmModal');
+            modal.classList.add('hidden');
+        });
+    </script>
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
